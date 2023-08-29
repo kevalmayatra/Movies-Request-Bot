@@ -1,9 +1,9 @@
 {
-    "name": "PROFESSOR-BOT",
+    "name": "Movies-Request-BOT",
     "description": "The Telegram Autofilter Bot",
-    "logo": "https://graph.org/file/b7e8484f6395a180b6380.jpg",
-    "keywords": ["Telegram", "auto-filter", "MrMKN"],
-    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "logo": "https://graph.org/file/cb5f32df970309dbc3a4c.jpg",
+    "keywords": ["Telegram", "auto-filter", "Moviesrequest"],
+    "repository": "https://github.com/Wishvishnu179/Movies-Request-BOT",
     "env": {
         "WEBHOOK": {
             "description": "True/False if your server is web support required? the value is True else False",
