@@ -11,9 +11,9 @@ def is_enabled(value, default):
 
 
 # PyroClient Setup 
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['API_ID', '29595247'])
+API_HASH = environ['API_HASH', '80e79c03bbb4642a2cf01a5dacf68031']
+BOT_TOKEN = environ['BOT_TOKEN', '6111715880:AAHe3jLKkUMN0mh6YJcFyDF0vXZIh1t3_wU']
 
 # Bot settings
 WEBHOOK = bool(environ.get("WEBHOOK", False)) # for web support on/off
@@ -22,9 +22,9 @@ UPTIME = time.time()
 
 # Admins, Channels & Users
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '10161397503').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001900525156').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '10161397503').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL','-1001687805588')
 auth_grp = environ.get('AUTH_GROUP')
@@ -32,7 +32,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://hackerpoo:hackerpoo@cluster0.wv0x0kw.mongodb.net/?retryWrites=true&w=majorityl")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
@@ -57,7 +57,7 @@ SHORT_API = environ.get("SHORT_API")
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001804171666'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Moviesrequest_chat')
 P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
