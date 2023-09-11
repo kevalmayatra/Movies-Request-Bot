@@ -17,7 +17,7 @@ Im Search Bot I can share Movies and Series 😁. You will get files for free. J
     SOURCE_TXT = """<b>NOTE:</b>
 - ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<a href=https://github.com/Wishvishnu179/MOVIES-REQUEST-BOT>MOVIES-REQUEST-BOT</a>
 
-<b>ᴅᴇᴠ: <a herf=https://t.me/Vishnumb14>vishnu wish ᴛɢ</a></b>"""
+<b>ᴅᴇᴠ: <a herf=https://t.me/>vishnu wish ᴛɢ</a></b>"""
 
     FILE_TXT = """<b>➤ Hᴇʟᴘ Fᴏʀ Fɪʟᴇ Sᴛᴏʀᴇ</b>
 
