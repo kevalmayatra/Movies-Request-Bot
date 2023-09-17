@@ -431,10 +431,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton("💵Get Premium Access", url=f"http://t.me/Tgmoviesworld_bot")
             ],[
-            InlineKeyboardButton("🎬Movie Group", Movie_Group='https://t.me/Moviesrequestfiles'),
+            InlineKeyboardButton("🎬Movie Group", Url='https://t.me/Moviesrequestfiles'),
             InlineKeyboardButton("💗Cʜᴀɴɴᴇʟ", url="https://t.me/moviesrequest_info")
             ],[      
-            InlineKeyboardButton("⚙️Support Chat", Support_chat="https://t.me/Moviesrequest_Chat")
+            InlineKeyboardButton("⚙️Support Chat", Url="https://t.me/Moviesrequest_Chat")
             ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), START_MESSAGE.format(user=query.from_user.mention, bot=client.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
        
