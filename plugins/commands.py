@@ -35,7 +35,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("💵Get Premium Access", url=f"http://t.me/Tgmoviesworld_bot")
             ],[
-            InlineKeyboardButton("🎬Movie Group", Movies_Group='https://t.me/Moviesrequestfiles')
+            InlineKeyboardButton("🎬Movie Group", Movies_Group='https://t.me/Moviesrequestfiles'),
             InlineKeyboardButton("💗Cʜᴀɴɴᴇʟ", url="https://t.me/moviesrequest_info")
             ],[      
             InlineKeyboardButton("⚙️Support Chat", Support_chat="https://t.me/Moviesrequest_Chat")
