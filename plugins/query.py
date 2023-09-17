@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton("💵Get Premium Access", url=f"http://t.me/Tgmoviesworld_bot")
             ],[
-            InlineKeyboardButton("🎬Movie Group", Movies Group='https://t.me/Moviesrequestfiles')
+            InlineKeyboardButton("🎬Movie Group", Movies Group='https://t.me/Moviesrequestfiles'),
             InlineKeyboardButton("💗Cʜᴀɴɴᴇʟ", url="https://t.me/moviesrequest_info")
             ],[      
             InlineKeyboardButton("⚙️Support Chat", Support_chat="https://t.me/Moviesrequest_Chat")
