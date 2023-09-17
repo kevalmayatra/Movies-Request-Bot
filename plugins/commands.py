@@ -19,7 +19,7 @@ async def start(client, message):
         buttons = [[           
             InlineKeyboardButton('📢 Uᴩᴅᴀᴛᴇꜱ 📢', url=f'https://t.me/{SUPPORT_CHAT}')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴩ ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('ℹ️ Hᴇʟᴩ ℹ️', url=f"https://t.me/Moviesrequest_chat")
         ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -35,11 +35,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("💵Get Premium Access", url=f"http://t.me/Tgmoviesworld_bot")
             ],[
-            InlineKeyboardButton("🎬Movie Group", Movie_Group='https://t.me/Moviesrequestfiles'),
+            InlineKeyboardButton("🎬Movie Group", Url='https://t.me/Moviesrequestfiles'),
             InlineKeyboardButton("💗Cʜᴀɴɴᴇʟ", url="https://t.me/moviesrequest_info")
             ],[      
-            InlineKeyboardButton("⚙️Support Chat", Support_chat="https://t.me/Moviesrequest_Chat")
-        ]]
+            InlineKeyboardButton("⚙️Support Chat", Url="https://t.me/Moviesrequest_Chat")
+            ]]
         m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ") 
         await asyncio.sleep(2)
         await message.reply_photo(photo=random.choice(PICS), caption=START_MESSAGE.format(user=message.from_user.mention, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), parse_mode=enums.ParseMode.HTML)
@@ -65,10 +65,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("💵Get Premium Access", url=f"http://t.me/Tgmoviesworld_bot")
             ],[
-            InlineKeyboardButton("🎬Movie Group", Movie_Group='https://t.me/Moviesrequestfiles'), 
+            InlineKeyboardButton("🎬Movie Group", Url='https://t.me/Moviesrequestfiles'),
             InlineKeyboardButton("💗Cʜᴀɴɴᴇʟ", url="https://t.me/moviesrequest_info")
             ],[      
-            InlineKeyboardButton("⚙️Support Chat", Support_chat="https://t.me/Moviesrequest_Chat")
+            InlineKeyboardButton("⚙️Support Chat", Url="https://t.me/Moviesrequest_Chat")
             ]]
         m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
         await asyncio.sleep(2)
